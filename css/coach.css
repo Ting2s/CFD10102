@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+}
+html,body{
+  font-family: '微軟正黑體';
+}
+a{
+  text-decoration: none;
+}
+h1,h2,span{
+  font-family: 'Permanent Marker', cursive, '微軟正黑體';
+}
+.wrap{
+  background-color: #EBECF0;
+  height: 100%;
+}
+/* component */
+
+/* 按鈕 */
+.btn-group-center{
+  display: flex;
+  justify-content: center;
+}
+.btn-lg{
+  display: inline-block;
+  font-size: 35px;
+  background-color: #fff;
+  color:#ff4500;
+  font-weight: 800;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.btn-lg:hover{
+  background-color: #ff4500;
+  color: #fff;
+  font-size: 38px;
+
+}
+/* navbar */
+header{
+  position: fixed;
+  z-index: 10;
+   width: 100%;
+}
+.navbar{
+  display: block;
+  /* border: 1px solid #000; */
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+.navbar .logo{
+  /* border: 1px solid #fff; */
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 64px;
+  background-image: url('../img/common/logo1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .nav{
+  float: right;
+}
+.navbar .nav .nav-item{
+  float: left;
+}
+
+.navbar .nav .nav-link{
+  display: block;
+  color: #fff;
+  line-height: 20px;
+  padding: 20px;
+  
+}
+.navbar .nav .nav-link:hover{
+  color: #ff4500;
+}
+
+/* jumbotron  */
+.jumbotron{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.jumbotron-slogan{
+  width: 300px;
+  height: 300px;
+  border: 3px solid #ff4500 ;
+  font-size: 70px;
+  padding: 30px;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.jumbotron-pic{
+  /* border: 1px solid green; */
+}
+.jumbotron-pic-1{
+  width: 1000px;
+  height: 600px;
+  background: url(../img/coach/pexels-cottonbro-4754129.jpg);
+  background-size: contain;
+  clip-path: polygon(50% 0%, 100% 0, 100% 83%, 26% 100%, 0 0);
+
+}
+
+
+/* --coach */
+.coach{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid purple; */
+  display: flex;
+}
+.coach-bg{
+  width: 100%;
+  height: 100%;
+  background-image:url(../img/coach/—Pngtree—ink\ style\ fight\ boxing_5940138.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  
+}
+
+.coach-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  width: 700px;
+  /* border: 1px solid red; */
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: -2px -2px 10px rgba(192, 192, 192, 1); 
+}
+.coach-pic{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid blue; */
+}
+.coach-des{
+  width: 50%;
+  /* border: 1px solid green; */
+}
+.coach-name{
+  font-size: 50px;
+  width: 30%;
+  height: 200px;
+  background-color: #ff4500;
+}
+.coach-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #faa; */
+}
+.coach-title{
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+.coach-intro{
+  padding: 20px;
+}
+
+.coach-a{
+  transform: translate(40px, 10px);
+}
+.coach-b{
+  transform: translate(40%, -30px);
+}
+.coach-c{
+  transform: translate(-50%, -20%);
+}
+.coach-d{
+  transform: translate(50%, -50%);
+}
+
+/* ---footer */
+.footer{
+  width: 100%;
+  background-color: #000;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-icon{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+}
+

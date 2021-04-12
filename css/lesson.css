@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+}
+html,body{
+  font-family: '微軟正黑體';
+}
+a{
+  text-decoration: none;
+}
+h1,h2,span{
+  font-family: 'Permanent Marker', cursive, '微軟正黑體';
+}
+
+/* component */
+
+/* 按鈕 */
+.btn-group-center{
+  display: flex;
+  justify-content: center;
+}
+.btn-lg{
+  display: inline-block;
+  font-size: 35px;
+  background-color: #fff;
+  color:#ff4500;
+  font-weight: 800;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.btn-lg:hover{
+  background-color: #ff4500;
+  color: #fff;
+  font-size: 38px;
+
+}
+/* navbar */
+header{
+  position: fixed;
+  z-index: 10;
+   width: 100%;
+}
+.navbar{
+  display: block;
+  /* border: 1px solid #000; */
+ 
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+.navbar .logo{
+  /* border: 1px solid #fff; */
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 64px;
+  background-image: url('../img/common/logo1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .nav{
+  float: right;
+}
+.navbar .nav .nav-item{
+  float: left;
+}
+
+.navbar .nav .nav-link{
+  display: block;
+  color: #fff;
+  line-height: 20px;
+  padding: 20px;
+  
+}
+.navbar .nav .nav-link:hover{
+  color: #ff4500;
+}
+
+/* ---Lesson */
+
+.lesson-title{
+ background:rgba(0,0,0,0.5); 
+ transform: translate(0, 120%);
+}
+h2{color:#fff; 
+  font-size:70px; 
+  text-align:center; 
+   padding:50px;}
+.parallax-boxing{
+  /* 設定背景圖片/居中/不重覆 */
+  background: url(../img/lesson/boxing.jpeg)center center no-repeat;
+
+  /* 設定區塊高度 */
+  min-height: 600px; 
+
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax-muaythai{
+  /* 設定背景圖片/居中/不重覆 */
+  background: url(../img/lesson/muay-thai.jpg)center center no-repeat;
+
+  /* 設定區塊高度 */
+  min-height: 600px; 
+
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax-bjj{
+  /* 設定背景圖片/居中/不重覆 */
+  background: url(../img/lesson/BJJ.jpg)center center no-repeat;
+
+  /* 設定區塊高度 */
+  min-height: 600px; 
+
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ---footer */
+.footer{
+  width: 100%;
+  background-color: #000;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-icon{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+}

@@ -1,0 +1,227 @@
+/* 
+Copyright2021
+Author */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+}
+html,body{
+  font-family: '微軟正黑體';
+}
+a{
+  text-decoration: none;
+}
+h1,h2,span{
+  font-family: 'Permanent Marker', cursive, '微軟正黑體';
+}
+/* layout 通用設定 */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: ;
+}
+.wrap{
+  height: 1000px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  background-color: #EBECF0;
+  flex-wrap: wrap;
+}
+
+/* component */
+
+/* 按鈕 */
+.btn-group-center{
+  display: flex;
+  justify-content: center;
+}
+.btn-lg{
+  display: inline-block;
+  font-size: 35px;
+  background-color: #fff;
+  color:#ff4500;
+  font-weight: 800;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.btn-lg:hover{
+  background-color: #ff4500;
+  color: #fff;
+  font-size: 38px;
+
+}
+/* navbar */
+header{
+  position: fixed;
+  z-index: 10;
+   width: 100%;
+}
+.navbar{
+  display: block;
+  /* border: 1px solid #000; */
+ 
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+.navbar .logo{
+  /* border: 1px solid #fff; */
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 64px;
+  background-image: url('../img/common/logo1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .nav{
+  float: right;
+}
+.navbar .nav .nav-item{
+  float: left;
+}
+
+.navbar .nav .nav-link{
+  display: block;
+  color: #fff;
+  line-height: 20px;
+  padding: 20px;
+  
+}
+.navbar .nav .nav-link:hover{
+  color: #ff4500;
+}
+
+/* reservation banner*/
+.reservation{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  /* border: 1px solid green; */
+}
+.reservation-sg{
+  width: 33.3333%;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding-left: 70px;
+}
+.reservation-sg span{
+  font-size: 70px;
+}
+.reservation-bg{
+  width: 33.3333%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  background-image:url(../img/reservation/—Pngtree—fighting\ martial\ arts_5940428.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+/* form */
+.ruler: 16px;
+.color-red: #AE1100;
+.color-bg: #EBECF0;
+.color-shadow: #BABECC;
+.color-white: #FFF;
+
+ p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+
+.reservation-form{
+  margin: 50px auto;
+  /* border: 1px solid red; */
+}
+form {
+  /* border: 1px solid blue; */
+  padding: 16px;
+  width: 320px ;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: $ruler*2 0;
+  text-align: center;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 16px;
+  background-color:#EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+}
+input:focus{
+  box-shadow:  inset 1px 1px 2px #babecc,
+  inset -1px -1px 2px,#FFF;
+}
+button {
+  position: relative;
+  transition: all .2s ease;
+  letter-spacing: .025em;
+  font-size: 15px;
+  border-color: #d1d9e6;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}  
+   
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+}
+button.red {
+  font-family: 'Permanent Marker';
+  display: block;
+  width: 100%;
+  color: #ff4500;
+}
+
+
+/* ---footer */
+.footer{
+  width: 100%;
+  background-color: #000;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-icon{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+}

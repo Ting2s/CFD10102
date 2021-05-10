@@ -98,7 +98,6 @@ button, input {
 /* ---hero */
 .hero{
   width: 100%;
-  border: 1px solid #000;
   display: flex;
   margin-top: 60px;
 }

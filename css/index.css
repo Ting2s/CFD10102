@@ -1,0 +1,555 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.row {
+  margin: 0;
+}
+a{
+  font-family: 'Permanent Marker';
+  font-size: 20px;
+  text-decoration: none;
+}
+ul li{
+  list-style-type:none;
+  }
+h1,h2,span{
+  font-family: 'Permanent Marker', cursive, '微軟正黑體';
+}
+
+/* layout 通用設定 */
+.wrapper{
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: center;
+ background-color: #f0eeef;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.rounded {
+  border-radius: .55rem;
+}
+color-red: #AE1100;
+color-bg: #f0eeef;
+color-shadow: #d6d4d5;
+color-white: #FFF;
+p, input, select, textarea, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+button {
+  font-family: 'Permanent Marker';
+  color: #ff4500;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #d6d4d5;
+  transition: all .2s ease;
+  letter-spacing: .025em;
+  transition: all 0.2s ease-in-out;
+  
+}  
+   
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #d6d4d5;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #d6d4d5, inset -1px -1px 2px #fff;
+}
+button.red {
+  font-family: 'Permanent Marker';
+  display: block;
+  width: 100%;
+  color: #ff4500;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 16px;
+  background-color:#f0eeef;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.title{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.title span{
+  font-size: 50px;
+  font-family: 'Londrina Shadow', cursive;
+}
+/* .organic-radious{
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+} */
+/* ================== */
+
+
+/* ----jumbotron */
+.jumbotron{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.jumbotron .jumbotron-sg {
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.jumbotron .jumbotron-sg span{
+  font-family: 'Permanent Marker', cursive;
+  color: #000;
+  font-size: 100px;
+  font-weight: 800;
+}
+/* ---hero */
+
+.hero{
+  width: 100%;
+  max-width: 1100px;
+  height: 650px;
+  margin: auto;
+  margin-bottom: 50px;
+  background:
+  linear-gradient(115deg, #f0eeef 50%, transparent 50%) center center /
+  100% 100%,
+  url("../img/index/cover.jpeg") right center / auto 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: .0625rem solid #fafbfe;
+  border-radius: .55rem;
+  box-shadow: 6px 6px 20px #bebebe,-6px -6px 12px #FFF;
+  transition: all .2s ease; 
+}
+.hero .hero-des{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+.hero .hero-des span{
+  display: block;
+	font-size: 70px;
+	font-weight: 700;
+  line-height: 1.3;
+}
+.hero .hero-pic{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  transform: translateX(25%);
+  padding: 30px;
+  box-shadow: inset 6px 6px 12px #d6d4d5,
+            inset -6px -6px 12px #ffffff;
+}
+
+/* ---lesson */
+.lesson{
+  max-width: 1020px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lesson .lesson-item{
+  padding: 20px;
+  border: .0625rem solid #bebebeb2;
+  border-radius: .55rem;
+  box-shadow: 6px 6px 20px #bebebe,-6px -6px 12px #FFF;
+  transition: all .2s ease; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.lesson .lesson-item .img-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.lesson .lesson-item .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lesson .lesson-item .lesson-des{
+  width: 100%;
+  min-height: 100px;
+  padding: 15px 0;
+}
+.lesson .lesson-item .lesson-des span{
+  font-family: 'Permanent Marker';
+  font-size: 50px;
+  position: absolute;
+  top: -40px;
+  color: #fff;
+}
+
+.lesson .lesson-item .lesson-des p{
+  font-family: 'Ariel';
+}
+
+/* ---reserve */
+.reserve{
+  width: 100%; 
+  background: url('../img/index/—Pngtree—ink\ and\ watercolor\ boxer_5909286.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+.reserve .reserve-sg{
+  text-align: center;
+  padding: 30px;
+  box-shadow: inset 6px 6px 12px #d6d4d5;
+
+}
+.reserve .reserve-btn{
+  margin: 25px;
+  display: flex;
+}
+.reserve .reserve-sg span{
+  font-size: 60px;
+  color: #ff4500;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.reserve .reserve-btn{
+  display: flex;
+  justify-content: center;
+}
+.reserve .reserve-btn span{
+  font-size: 90px;
+  color: #ff4500;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.reserve .reserve-btn button{
+  margin-left: 20px;
+}
+
+.reserve .reserve-pc img{
+
+  width: 100%;
+}
+.reserve .inner{
+  width: 100%;
+  
+}
+
+/* --Coach */
+.coach{
+  max-width: 1020px;
+  display: flex;
+}
+.coach-item{
+  width: 100%;
+  padding: 10px;
+  border: .0625rem solid #bebebeb2;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  box-shadow: 6px 6px 20px #bebebe,-6px -6px 12px #FFF;
+  transition: all .2s ease; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coach .coach-item .img-box{
+  /* border: 1px solid red; */
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+}
+.coach .coach-item .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --Shop */
+.shop{
+  width: 100%;
+}
+.shop-sg{
+  width: 60%;
+  height: 50%;
+  background: #fff;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%; 
+  transform: translate(35%, 30%);
+  padding: 10px;
+  text-align: center;
+  padding-top: 80px;
+ }
+ .shop-sg span{
+   color: #ff4500;
+   font-size: 60px;
+ }
+.shop-parallax{
+  background: url(../img/index/boxing\ icons.png) center center repeat;
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: contain;
+}
+/* --- About */
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  background:
+   url("../img/index/hero.jpg") center center / auto 100%;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.about-des{
+  position: absolute;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  color: #bebebe;
+}
+.about-des p{
+  font-family: 'Permanent Marker';
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+}
+/* --- Marqee*/
+
+.marquee {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  color: #ff4500;
+}
+
+.marquee p {
+  font-family: 'Permanent Marker';
+  font-size: 40px;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 01s linear infinite;
+  -webkit-animation: scroll-left 1s linear infinite;
+  animation: scroll-left 12s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+/* ---Footer */
+footer{
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  display: block;
+}
+.footer .logo{
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 64px;
+  background-image: url('../img/common/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer .footer-group{
+  float: right;
+  /* height: 64px; */
+}
+.footer .footer-group .footer-item{
+  float: left;
+}
+.footer .footer-group .footer-link{
+  display: block;
+  line-height: 20px;
+  padding: 10px;
+  
+}
+.footer .footer-group .footer-link img{
+  width: 50px;
+  height: 40%;
+}
+
+/* RWD */
+
+@media screen and (max-width: 768px){
+  .navbar .nav{
+    position: fixed;
+    left: 0;
+    top: 64px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s;
+    display: none;
+  }
+  #popup-menu:target{
+    opacity: 1;
+    visibility: visible;
+    
+  }
+  .navbar .nav .nav-item {
+    float: none;
+  }
+  .navbar .nav .nav-link{
+    text-align: center;
+    padding: 16px;
+  }
+  .navbar .menu-toggle{
+		display: inline-block;
+	}
+	.navbar .close-btn{
+		display: block;
+	}
+  #show-menu:checked ~ .nav {
+    display: block;
+  }
+  #show-menu:checked + .menu-toggle span.one{
+    transform: rotate(45deg);
+    transform-origin: center;
+    transform-origin: -5px -7px;
+  }
+  #show-menu:checked + .menu-toggle span.three{
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transform-origin: 0px 12px;
+  }
+  #show-menu:checked + .menu-toggle .two{
+    display: none;
+  }
+
+  /*RWD:index */
+  .coach{
+    width: 100%;
+  } 
+  .coach-item{
+    margin-bottom: 30px;
+  }
+  .coach .coach-item .img-box {
+    height: 40vw;
+  }
+  .hero{
+    width: 100%;
+    background:
+    url("../img/index/cover.jpeg") right center / auto 100%;
+  }
+  .hero .hero-des span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  }
+  .hero .hero-pic{
+  display: none;
+  }
+
+  .lesson span{
+    font-size: 70%;
+  }
+
+  .reserve span{
+    font-size: 20px;
+  }
+  .shop{
+    margin-bottom: 10px;
+  }
+  .shop .shop-sg span{
+    font-size: 40px;
+  }
+  .jumbotron .jumbotron-sg span {
+    font-size: 50px;
+  }
+  .about{
+    height: 600px;
+    padding: 0;
+    margin-bottom: 0;
+    background:
+    url("../img/index/hero.jpg") center center / auto 100%;
+  }
+  .about-des{
+    transform: translateY(50%);
+  }
+  .about-des p{
+    font-size: 100%;
+  }
+  .marquee {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    overflow: hidden;
+  }
+  .marquee p{
+    font-size: 20px;
+    animation: scroll-left 5s linear infinite;
+  }
+}

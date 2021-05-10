@@ -6,82 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>東升格鬥</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="css/lesson.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/lesson.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<!-- Swiper v4.1.0 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>
 </head>
 <body>
-  <div class="wrap">
+ <div class="wrapper">
     <!-- Start header -->
-    <header class="header">
+     <!-- Start header -->
+     <header class="header">
       <div class="navbar">
         <div class="container">
-          <a href="index.html" class="logo">
-           
-         </a>
-         <ul class="nav">
-             <li class="nav-item">
-               <a href="reservation.html" class="nav-link">預約體驗</a>
-             </li>
-             <li class="nav-item">
-               <a href="lesson.html" class="nav-link">課程介紹</a>
-             </li>
-             <li class="nav-item">
-               <a href="coach.html" class="nav-link">教練團隊</a>
-             </li>
-             <li class="nav-item">
-               <a href="shop.html" class="nav-link">商城</a>
-             </li>  
-             <li class="nav-item">
-               <a href="news.html" class="nav-link">最新消息</a>
-             </li>  
-             <li class="nav-item">
-               <a href="#!" class="nav-link">關於我們</a>
-             </li>  
-         </ul>  
+          <a href="index.html" class="logo"></a>
+    <input type="checkbox" role="button" id="show-menu">
+          <label for="show-menu" class="menu-toggle">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+          </label>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="reserve.html" class="nav-link">reserve</a>
+            </li>
+            <li class="nav-item">
+              <a href="lesson.html" class="nav-link">lesson</a>
+            </li>
+            <li class="nav-item">
+              <a href="coach.html" class="nav-link">coach</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">about us</a>
+            </li>
+          </ul>
         </div>
       </div>
-     </header>
+    </header>
     <!-- End header -->
-    <!-- Start Main -->
-    <div class="parallax-boxing">
-      <div class="lesson-title">
-        <h2>BOXING</h2>
+    <!-- End header -->
+   <!-- Start Main -->
+   <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <div class="parallax-boxing">
+          <div class="lesson-title">
+            <span>BOXING</span>
+          </div>
+           </div>
+            <div class="lesson-des">
+              <p class="des">
+                Boxing, sport, both amateur and professional, involving attack and defense with the fists. Boxers usually wear padded gloves and generally observe the code set forth in the marquess of Queensberry rules. Matched in weight and ability, boxing contestants try to land blows hard and often with their fists, each attempting to avoid the blows of the opponent. A boxer wins a match either by outscoring the opponent—points can be tallied in several ways—or by rendering the opponent incapable of continuing the match. Bouts range from 3 to 12 rounds, each round normally lasting three minutes.
+              <br><br><br>
+              </p>
+            </div>
+           <div class="parallax-muaythai">
+          <div class="lesson-title">
+            <span>MUAY THAI</span>
+          </div>
+           </div>
+            <div class="lesson-des">
+              <p class="des">
+                Muay Thai is a full contact fighting sport of the combat sports discipline in which fighters try to defeat their opponents by using hitting and kicking techniques. The sport originated in Thailand, and started gaining international popularity when Muay Thai fighters were able to defeat fighters that practiced other forms of martial arts. Fighters use different techniques that make use of fists, elbows, knees, and shins. Recently many fighters in MMA have included many Muay Thai techniques in their fights.
+              <br><br><br><br><br>
+              </p>
+            </div>
+           <div class="parallax-bjj">
+          <div class="lesson-title">
+            <span>Brazilian Jiu-Jitsu</span>
+          </div>
+           </div>
+            <div class="lesson-des">
+              <p class="des">
+                Brazilian Jiu-Jitsu (BJJ; jiu-jitsu brasileiro) is a martial art and combat sport based on ground fighting (ne-waza) and submission holds. It focuses on the skill of taking an opponent to the ground, controlling one's opponent, gaining a dominant position and using a number of techniques to force them into submission via joint locks or chokeholds.
+                        <br>
+                        <br><br><br><br>
+              </p>
+            </div>
+       </div>
+     </div>
+   </div>
+   <!-- End Main -->
+   <!--Start footer  -->
+   <footer>
+    <div class="footer">
+      <div class="container">
+        <a href="index.html" class="logo">
+        </a>
+        <ul class="footer-group">
+          <li class="footer-item">
+            <a href="#!" class="footer-link">
+              <img src="./img/common/fb-icon.png" alt="" class="icon">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="#!" class="footer-link">
+              <img src="./img/common/yt-icon.png" alt="">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <p class="des">
-     雖然說現在有不少朋友，已很少登入臉書，但卻還一直有在使用Facebook臉書所推的社群聊天功能Message，而Message與LINE最不同的地方就在於，無論是透過手機還是平板登入，訊息都不會不見，甚至還會保留所有的聊天記錄，因此當有好友傳送圖片或檔案時，也不會因為太久沒下載而被刪除。
-    <br>
-      而Facebook Message最強大的地方，就在於可跨裝置的登入帳號後，就可隨時的瀏覽訊息，今天因為梅干嫂忘了帶手機，無法不擔心臉書訊息漏接，真的是超方便啦！ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </p>
-    <div class="parallax-muaythai">
-      <div class="lesson-title">
-        <h2>MUAY THAI</h2>
-      </div>
-    </div>
-    <p class="des">
-     雖然說現在有不少朋友，已很少登入臉書，但卻還一直有在使用Facebook臉書所推的社群聊天功能Message，而Message與LINE最不同的地方就在於，無論是透過手機還是平板登入，訊息都不會不見，甚至還會保留所有的聊天記錄，因此當有好友傳送圖片或檔案時，也不會因為太久沒下載而被刪除。
-    <br>
-      而Facebook Message最強大的地方，就在於可跨裝置的登入帳號後，就可隨時的瀏覽訊息，今天因為梅干嫂忘了帶手機，無法使用LINE只好暫時的使用臉書訊息，但不想一直開著臉書網頁，以及安裝Facebook訊息，因此梅干就傳先前分享過的Chrome外掛給梅干嫂，才發現原來那外掛已經下架了，所以梅干找到另一套的臉書訊息外掛，讓你使用Chrome瀏覽其它網頁時，也不擔心臉書訊息漏接，真的是超方便啦！ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </p>
-    <div class="parallax-bjj">
-      <div class="lesson-title">
-        <h2>MUAY THAI</h2>
-      </div>
-    </div>
-    <p class="des">
-      雖然說現在有不少朋友，已很少登入臉書，但卻還一直有在使用Facebook臉書所推的社群聊天功能Message，而Message與LINE最不同的地方就在於，無論是透過手機還是平板登入，訊息都不會不見，甚至還會保留所有的聊天記錄，因此當有好友傳送圖片或檔案時，也不會因為太久沒下載而被刪除。
-     <br>
-       而Facebook Message最強大的地方，就在於可跨裝置的登入帳號後，就可隨時的瀏覽訊息，今天因為梅干嫂忘了帶手機，無法使用LINE只好暫時的使用臉書訊息，但不想一直開著臉書網頁，以及安裝Facebook訊息，因此梅干就傳先前分享過的Chrome外掛給梅干嫂，才發現原來那外掛已經下架了，所以梅干找到另一套的臉書訊息外掛，讓你使用Chrome瀏覽其它網頁時，也不擔心臉書訊息漏接，真的是超方便啦！ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-     </p>
-     <!-- End Main -->
-     <!-- Start footer -->
-    <footer class="footer">
-      <div class="footer-icon">
-        <img src="./img/common/iconfinder_Facebook.png" alt="">
-        <img src="./img/common/iconfinder_1_Instagram.png" alt="">
-      </div>
-    </footer>
-    <!-- End footer -->
+  </footer>
+   <!-- End footer -->
   </div>
 </body>
 </html>

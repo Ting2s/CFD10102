@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東升格鬥</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/reserve.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<!-- Swiper v4.1.0 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>
+</head>
+<body>
+ <div class="wrapper">
+    <!-- Start header -->
+    <header class="header">
+      <div class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo"></a>
+    <input type="checkbox" role="button" id="show-menu">
+          <label for="show-menu" class="menu-toggle">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+          </label>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="reserve.html" class="nav-link">reserve</a>
+            </li>
+            <li class="nav-item">
+              <a href="lesson.html" class="nav-link">lesson</a>
+            </li>
+            <li class="nav-item">
+              <a href="coach.html" class="nav-link">coach</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">about us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+   <!-- Start Main -->
+    <!-- Start Hero -->
+    <section class="hero ">
+     <div class="row">
+       <div class="col-4 col-md-12">
+           <!-- 幻燈片內容 -->
+            <div class="swiper-container ">
+              <!-- 外層(必要) -->
+              <div class="swiper-wrapper">
+                <!-- 幻燈片內容 -->
+                <div class="swiper-slide"><img src="./img/reserve/pexels-photo-4753927.jpeg"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/300/400/?random=1"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/300/400/?random=1"></div>
+              </div>
+                <!-- 分頁(非必要) -->
+                <div class="swiper-pagination"></div>
+                <!-- 上/下一頁按鈕(非必要) -->
+                <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+              <script>
+                var mySwiper = new Swiper ( ".swiper-container", {
+                  // 參數設定[註1]
+                  direction: "vertical", // 方向
+                  loop: true,  // 循環
+                  pagination: {
+                    el: ".swiper-pagination",  // 分頁物件
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next", // 上一頁按鈕物件
+                    prevEl: ".swiper-button-prev", // 下一頁按鈕物件
+                  },
+                  scrollbar: {
+                    el: ".swiper-scrollbar", // 捲軸物件
+                  }
+                })
+              </script> 
+        </div>
+       <div class="col-4 col-md-4">
+         <div class="hero-sg">
+          <span>NEW <br> STRENGTH <br>NEW <br>BEGINNINGS</span>
+         </div>
+       </div>
+       <div class="col-4 col-md-4">
+         <div class="hero-bg">
+         </div>
+       </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <!-- Start info -->
+    <section class="info col-md-12">
+      <div class="title">
+        <span>INFO</span>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-md-12">
+            <div class="info-item">
+              <img src="./img/reserve/accesory.png" alt="">
+              <div class="info-des">
+                <span>What do I need for my first class?</span>
+                <p>Gym clothes,
+                  Water Bottle, and a
+                  towel :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-md-12">
+              <div class="info-map rounded">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115753.32874172165!2d121.2127952!3d24.9561943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1620386495699!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <div class="map-des">
+                <p>TEL:  03 425 8183</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End info -->
+    <!-- Start form -->
+    <section class="form col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-10">
+             <form action="">
+              <label>
+                <input type="text" placeholder="Name"/>
+              </label>
+              <label>
+                <input type="phone" placeholder="Phone"/>
+              </label>
+              <label>
+                <input type="date" placeholder="date"/>
+              </label>
+              <button class="red" type="button"><i class="icon ion-md-lock"></i> RESERVE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End form -->
+    <!-- Start shedule -->
+    <section class="schedule col-md-12 table-responsive">
+      <div class="row">
+          <table>
+            <tbody>
+                <tr class="day">
+                    <th>
+                        MON
+                    </th>
+                    <th>
+                        TUE
+                    </th>
+                    <th>
+                        WED
+                    </th>
+                    <th>
+                        THU
+                    </th>
+                    <th>
+                        FRI
+                    </th>
+                    <th>
+                        SAT
+                    </th>
+                    <th>
+                        SUN
+                    </th>
+                </tr>
+                <tr>
+                    <td class="private">
+                        8:30<br>-9:30<br><br>
+                        PRIVATE<br>CLASS
+                    </td>
+                    <td class="boxing">
+                      8:30<br>-9:30<br><br>
+                      BOXING
+                    </td>
+                    <td class="bjj">
+                      8:30<br>-9:30<br><br>
+                      BJJ
+                    </td>
+                    <td class="muay">
+                      8:30<br>-9:30<br><br>
+                      MUAY<br>
+                        THAI
+                    </td>
+                    <td class="bjj">
+                      8:30<br>-9:30<br><br>
+                      BJJ
+                    </td>
+                    <td class="private">
+                      8:30-<br>9:30<br><br>
+                      PRIVATE<br>CLASS
+                    </td>
+                    <td class="private">
+                      8:30<br>-9:30<br><br>
+                      PRIVATE<br>CLASS
+                    </td>
+                </tr>
+                <tr>
+                    <td class="muay">
+                        15:30-17:30<br><br>MUAY<br>
+                        THAI
+                    </td>
+                    <td class="muay">
+                        15:30-17:30<br><br>MUAY <br>THAI
+                    </td>
+                    <td class="muay">
+                        15:30-17:30<br><br>MUAY<br> THAI
+                    </td>
+                    <td class="bjj">
+                        15:30-<br>17:30<br><br>BJJ
+                    </td>
+                    <td class="boxing">
+                        15:30-<br>17:30<br><br>BOXING
+                    </td>
+                    <td class="muay">
+                      15:30-<br>17:30<br><br>MUAY<br>
+                      THAI
+                   </td>
+                    <td class="muay">
+                      15:30-<br>17:30<br><br>MUAY<br>
+                      THAI
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boxing">
+                        19:00-21:00<br><br>BOXING
+                    </td>
+                    <td class="muay">
+                        19:00-21:00<br><br>MUAY<br>
+                        THAI
+                    </td>
+                    <td class="muay">
+                        19:00-21:00<br><br>MUAY<br>
+                        THAI
+                    </td>
+                    <td class="boxing">
+                        19:00-21:00<br><br>BOXING
+                    </td>
+                    <td class="bjj">
+                        19:00-21:00<br><br>BJJ
+                    </td>
+                    <td class="boxing">
+                        19:00-21:00<br><br>BOXING
+                    </td>
+                    <td class="bjj">
+                        19:00-21:00<br><br>BJJ
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- End shedule -->
+   <!-- End Main -->
+   <!--Start footer  -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <a href="index.html" class="logo">
+          </a>
+          <ul class="footer-group">
+            <li class="footer-item">
+              <a href="#!" class="footer-link">
+                <img src="./img/common/fb-icon.png" alt="" class="icon">
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">
+                <img src="./img/common/yt-icon.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+   <!-- End footer -->
+ </div> 
+</body>
+</html>

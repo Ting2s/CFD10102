@@ -3,58 +3,166 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  list-style: none;
 }
 html,body{
-  font-family: '微軟正黑體';
+
 }
 a{
+  font-family: 'Permanent Marker';
+  font-size: 20px;
   text-decoration: none;
 }
 h1,h2,span{
   font-family: 'Permanent Marker', cursive, '微軟正黑體';
 }
 
-/* component */
+/* layout 通用設定 */
+.wrapper{
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: center;
+ background-color: #f0eeef;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.rounded {
+  border-radius: .55rem;
+}
+color-red: #AE1100;
+color-bg: #f0eeef;
+color-shadow: #d6d4d5;
+color-white: #FFF;
+p, input, select, textarea, {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+button {
+  font-family: 'Permanent Marker';
+  color: #ff4500;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #d6d4d5;
+  transition: all .2s ease;
+  letter-spacing: .025em;
+  transition: all 0.2s ease-in-out;
+  
+}  
+   
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #d6d4d5;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #d6d4d5, inset -1px -1px 2px #fff;
+}
+button.red {
+  font-family: 'Permanent Marker';
+  display: block;
+  width: 100%;
+  color: #ff4500;
+}
 
-/* 按鈕 */
-.btn-group-center{
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 16px;
+  background-color:#f0eeef;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.title{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.title span{
+  font-size: 50px;
+  font-family: 'Londrina Shadow', cursive;
+}
+/* .organic-radious{
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+} */
+/* ================== */
+
+
+/* ---Lesson */
+
+
+ .parallax-boxing{
+   /* 設定背景圖片/居中/不重覆 */
+   background: url(../img/lesson/boxing.jpeg)center center no-repeat;
+   /* 設定區塊高度 */
+   min-height: 600px; 
+   /* 背景自動縮放/固定 */
+   background-attachment: fixed;
+   background-size: cover;
+ }
+ .parallax-muaythai{
+   /* 設定背景圖片/居中/不重覆 */
+   background: url(../img/lesson/muay-thai.jpg)center center no-repeat;
+ 
+   /* 設定區塊高度 */
+   min-height: 600px; 
+ 
+   /* 背景自動縮放/固定 */
+   background-attachment: fixed;
+   background-size: cover;
+ }
+ .parallax-bjj{
+   /* 設定背景圖片/居中/不重覆 */
+   background: url(../img/lesson/BJJ.jpg)center center no-repeat;
+ 
+   /* 設定區塊高度 */
+   min-height: 600px; 
+ 
+   /* 背景自動縮放/固定 */
+   background-attachment: fixed;
+   background-size: cover;
+ }
+ .lesson-title{
   display: flex;
   justify-content: center;
-}
-.btn-lg{
-  display: inline-block;
-  font-size: 35px;
-  background-color: #fff;
-  color:#ff4500;
-  font-weight: 800;
-  border: 3px solid #fff;
-  border-radius: 8px;
-  padding: 10px;
-  transition: all 0.3s;
-}
-.btn-lg:hover{
-  background-color: #ff4500;
-  color: #fff;
-  font-size: 38px;
+  /* background:rgba(0,0,0,0.5);  */
+  transform: translate(0, 130%);
+ }
+ .lesson-title span{color:#fff; 
+   font-size:70px; 
+   text-align:center; 
+    padding:50px;
+ }
+ .lesson-des{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  font-size: 24px; 
+  padding: 50px;
+ }
 
-}
-/* navbar */
-header{
-  position: fixed;
-  z-index: 10;
-   width: 100%;
-}
-.navbar{
+
+
+
+
+
+
+
+
+
+
+/* ---Footer */
+footer{
+  width: 100%;
+  height: 70px;
+  background-color: #000;
   display: block;
-  /* border: 1px solid #000; */
- 
-  height: 64px;
-  background-color: rgba(0, 0, 0, 0.8);
-  
 }
-.navbar .logo{
-  /* border: 1px solid #fff; */
+.footer .logo{
+  border: 1px solid #fff;
   display: inline-block;
   vertical-align: top;
   width: 160px;
@@ -64,82 +172,18 @@ header{
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.navbar .nav{
+.footer .footer-group{
   float: right;
 }
-.navbar .nav .nav-item{
+.footer .footer-group .footer-item{
   float: left;
 }
-
-.navbar .nav .nav-link{
+.footer .footer-group .footer-link{
   display: block;
-  color: #fff;
   line-height: 20px;
-  padding: 20px;
-  
+  padding: 10px;
 }
-.navbar .nav .nav-link:hover{
-  color: #ff4500;
-}
-
-/* ---Lesson */
-
-.lesson-title{
- background:rgba(0,0,0,0.5); 
- transform: translate(0, 120%);
-}
-h2{color:#fff; 
-  font-size:70px; 
-  text-align:center; 
-   padding:50px;}
-.parallax-boxing{
-  /* 設定背景圖片/居中/不重覆 */
-  background: url(../img/lesson/boxing.jpeg)center center no-repeat;
-
-  /* 設定區塊高度 */
-  min-height: 600px; 
-
-  /* 背景自動縮放/固定 */
-  background-attachment: fixed;
-  background-size: cover;
-}
-.parallax-muaythai{
-  /* 設定背景圖片/居中/不重覆 */
-  background: url(../img/lesson/muay-thai.jpg)center center no-repeat;
-
-  /* 設定區塊高度 */
-  min-height: 600px; 
-
-  /* 背景自動縮放/固定 */
-  background-attachment: fixed;
-  background-size: cover;
-}
-.parallax-bjj{
-  /* 設定背景圖片/居中/不重覆 */
-  background: url(../img/lesson/BJJ.jpg)center center no-repeat;
-
-  /* 設定區塊高度 */
-  min-height: 600px; 
-
-  /* 背景自動縮放/固定 */
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* ---footer */
-.footer{
-  width: 100%;
-  background-color: #000;
-  height: 70px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.footer .footer-icon{
-  width: 120px;
-  height: 40px;
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 40px;
+.footer .footer-group .footer-link img{
+  width: 50px;
+  height: 40%;
 }
